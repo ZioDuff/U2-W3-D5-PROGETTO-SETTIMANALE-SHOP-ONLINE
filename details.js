@@ -1,3 +1,8 @@
+// riprendiamo gli stessi parametri per poterci spostare sulla pagina dettagli di ogni pordotto
+//tramite l'id univoco
+// andiamo poi a creare un box che contiene sia l'immagine che il restante contenuto
+//aggiungendo poi un bottone per ritornare all'home page
+
 const params = new URLSearchParams(window.location.search)
 const id = params.get("appId")
 console.log(params)

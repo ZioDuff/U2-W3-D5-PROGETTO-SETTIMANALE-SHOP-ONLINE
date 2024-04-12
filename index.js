@@ -1,6 +1,6 @@
 const URL = "https://striveschool-api.herokuapp.com/api/product/"
 const row = document.querySelector(".row")
-
+// una volta presa la nostra API andiamo a creare la nostra promise
 const generateCard = (event) => {
   fetch(URL, {
     method: "GET",
@@ -27,7 +27,8 @@ const generateCard = (event) => {
         const _id = obj._id
         const col = document.createElement("col")
         col.classList.add("col-md-4", "mb-2")
-
+        // una volta richiamate tutte le proprieta dell'oggetto che ci servono andiamo a creare la card
+        //lo facciamo avvenire ad ogni sigola card creata
         col.innerHTML = `<div class="card shadow-lg">
         <img src=${img} class="card-img-top" style="aspect-ratio: 4/3 ; object-fit: contain" alt="...">
         <div class="card-body">
